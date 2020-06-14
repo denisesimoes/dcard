@@ -24,8 +24,16 @@
 	<meta name="keywords" content="Soluções em design, produção, manutenção e gestão em Projetos Web/TI, pequenas empresas, empreendedores, produtos gratuitos Google"/>
 	<meta name="robots" content="index, follow"/>
 	
+	<script>
+		/*
+		if (navigator.onLine === true) {
+			location.replace("/dcard/app.html");
+		}
+		*/
+	</script>
+	
 	<style>
-		html, body { margin: 0; padding: 0; height: 100%; }
+		html, body { margin: 0; padding: 0; height: 100%; background-color: #123c4a; }
 		body {
 			font-family: Arial;
 			font-size: 16px;
@@ -33,46 +41,95 @@
 		#main {
 			min-height: 100%;
 			position: relative;
-			background-image: url("https://4.bp.blogspot.com/-iGmwG2cWl0Q/XkwIzmN7KEI/AAAAAAAAAH0/vqpB9wKlYQgq_K4LdNXgYr12po6U9UAiQCK4BGAYYCw/s0/mauricio-jun-information-technology-consulting-04-D.png");
+			/*
+			background-image: url("imgs/denise-simoes-bkg.png");
 			background-color: #f9f9f9;
-			background-position: center;
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-size: 100%;
+			*/
+			background-image: url("imgs/logo-bkg-03-mobile-transparente.png");
+			background-position: bottom left;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
 		}
+		#mainheader {
+			background-image: url("imgs/denise-simoes-bkg.png");
+			background-color: #f9f9f9;
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			/*background-size: contain*/
+			background-size: 100%;
+			/*background-clip: border-box;*/
+			min-height: 195px;
+		}
 		#header {
-			padding: 8px  8px  0px  8px;
+			/*padding: 195px  20px  0px  20px;*/
+			padding: 39%  20px  0px  20px;
+			background-image: url("imgs/header-bkg-01.png");
+			/*background-color: #282828;*/
+			background-position: bottom;
+			background-repeat: repeat-x;
 		}
 		#content {
+			/*
 			padding-top: 8px;
 			padding-right: 8px;
 			padding-bottom: 8px;
 			padding-left: 8px;
+			*/
+			/*
+			background-image: url("imgs/logo-bkg-03-mobile-transparente.png");
+			background-position: bottom left;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			*/
+			/*background-size: contain*/
+			/*background-size: 100%;*/
+			/*background-clip: border-box;*/
+			/*min-height: 195px;*/
+		}
+		#contentarea {
+			padding: 0px 20px;
 		}
 		#footer {
 			min-height: 50px;
-			background: #123b40;
+			background: #282828;
 			width: 100%;
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			color: #fff;
+			color: #5c7983;
+			border-top: 1px solid #ffb23c;
 		}
 		#footer a {
-			color: #84bfb4;
+			color: #c19f63;
 			text-decoration: none;
 		}
 		
 		/* Style the tab */
+		#maintabs {
+			border: 1px solid #ffb23c;
+		}
 		.tab {
 			overflow: hidden;
-			border: 1px solid #3a8c8c;
-			background-color: #3a8c8c;
+			/*
+			border-top: 1px solid #ffb23c;
+			border-right: 1px solid #ffb23c;
+			border-left: 1px solid #ffb23c;
+			*/
+			/*background-color: #ffb23c;*/
 		}
 		
 		/* Style the buttons inside the tab */
 		.tab button {
-			background-color: inherit;
+			/*background-color: inherit;*/
 			float: left;
 			border: none;
 			outline: none;
@@ -80,30 +137,48 @@
 			padding: 12px 14px;
 			transition: 0.3s;
 			font-size: 0.8em;
-			color: #fff;
+			color: #630f12;
 			width: 33.3%;
+			background-color: #ffb23c;
+			border-radius: 0px;
+			/*border-right: 1px solid #123c4a;*/
+			border-left: 1px solid #123c4a;
+		}
+		.tab button:first-child {
+			border-left: none;
 		}
 		
 		/* Change background color of buttons on hover */
 		.tab button:hover {
-			background-color: #84bfb4;
+			background-color: #d8aa55;
 		}
 		
 		/* Create an active/current tablink class */
 		.tab button.active {
-			background-color: #123b40;
+			/*background-color: #123b40;*/
+			background-color: initial;
+			color: #fff;
 		}
 		
 		/* Style the tab content */
 		.tabcontent {
 			display: none;
-			padding: 10px 12px;
-			border: 1px solid #3a8c8c;
+			padding: 10px 10px;
+			/*border: 1px solid #3a8c8c;*/
 			border-top: none;
+		}
+		#SOBRE {
+			color: #fff;
+			font-size: 1em;
+		}
+		.pdefault {
+			color: #fff;
+			font-size: 1em;
 		}
 		
 		.imageResponsive {
 			max-width: 100%;
+			max-height: 100%;
 			height: auto;
 		}
 		.titleHeader, .titleHeader a {
@@ -119,18 +194,50 @@
 			margin-inline-end: 0px;
 			font-weight: bold;
 			line-height: 0.7em; /*to avoid padding-bottom*/
+			border: 1px solid #ffb23c;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			padding-left: 25px;
+			padding-right: 25px;
+			background-color: #fff;
 		}
 		.subtitle {
 			display: block;
-			font-size: 1em;
-			margin-block-start: 0.53em;
-			margin-block-end: 0.83em;
+			font-size: 0.67em;
+			margin-block-start: 0em;
+			margin-block-end: 0em;
 			margin-inline-start: 0px;
 			margin-inline-end: 0px;
 			font-weight: bold;
-			padding-left: 0.33em;
-			border-bottom: 1px solid #b5b5b5;
-			border-left: 3px solid #575a5a;
+			padding-top: 0.4em;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 1.25em;
+			border-top: 1px solid #5c7983;
+			/* border-left: 3px solid #575a5a; */
+			color: #5c7983;
+			text-align: center;
+		}
+		.subtitle span {
+			font-weight: normal !important;
+		}
+		
+		.contentsubtitle {
+			display: block;
+			font-size: 1em;
+			margin-block-start: 0em;
+			margin-block-end: 0em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+			padding-top: 0.4em;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			/* border-top: 1px solid #5c7983;
+			border-left: 3px solid #575a5a; */
+			color: #fff;
+			text-align: center;
 		}
 		
 		/*  SECTIONS  */
@@ -172,30 +279,34 @@
 		.dot {
 			display: inline-block;
 			border-radius: 50%;
-			height: 30px;
-			width: 30px;
+			height: 38px;
+			width: 38px;
 			text-align: center;
-			line-height: 30px;
+			line-height: 38px;
 			vertical-align: middle;
 			padding: 6px;
-			background-color: #3a8c8c;
+			background-color: #ffb23c;
+		}
+		.dotverticaltop {
+			vertical-align: top;
 		}
 		.dot i {
-			font-size: 26px;
-			line-height: 30px;
-			color: #fff;
+			/*font-size: 36px;*/
+			font-size: 28px;
+			line-height: 38px;
+			color: #123c4a;
 			border: none;
 			text-decoration: none;
 		}
 		.fahighlight {
-			color: #fff !important;
+			color: #123c4a !important;
 		}
 		.dothighlight {
-			background-color: #3a8c8c;
+			background-color: #ffb23c;
 		}
 		.iconslinkstexts {
 			display: block;
-			color: #123b40;
+			color: #ffb23c;
 			border: none;
 			margin-top: 5px;
 			margin-bottom: 15px;
@@ -204,7 +315,7 @@
 		}
 		.iconslinkstextsfloat {
 			display: inline-block;
-			color: #123b40;
+			color: #ffb23c;
 			border: none;
 			margin-left: 5px;
 			text-decoration: none;
@@ -215,7 +326,7 @@
 			text-align: left;
 		}
 		.iconslinkstextshighlight {
-			color: #123b40;
+			color: #ffb23c;
 		}
 		.iconslinkstexts strong, .iconslinkstextsfloat strong {
 			font-weight: normal;
@@ -235,16 +346,26 @@
 		
 		.socialarea {
 			display: block;
-			margin-block-start: 1em;
-			margin-block-end: 1em;
+			margin-block-start: 0em;
+			margin-block-end: 0em;
 			margin-inline-start: 0px;
 			margin-inline-end: 0px;
 			text-align: center;
-			background: rgba(209,209,188,0.3);
+			/*background: rgba(209,209,188,0.3);*/
 		}
 		.socialarea .dot {
 			margin: 10px 5px;
-			background-color: #BF2A45;
+			/*background-color: #0dccac;*/
+			border: 2px solid #0dccac;
+			background-color: initial;
+			height: 30px;
+			width: 30px;
+			line-height: 30px;
+		}
+		.socialarea .dot i {
+			color: #0dccac;
+			font-size: 24px;
+			line-height: 30px;
 		}
 		footer {
 			text-align: center;
@@ -291,6 +412,15 @@
 			background-color: #123b40;
 			color: white;
 		}
+		.button3 {
+			background-color: #ffb23c;
+			border-radius: 4px;
+			text-transform: uppercase;
+		}
+		.button3:hover {
+			background-color: #d8aa55;
+			color: white;
+		}
 		.buttoncenter { margin: 0px auto; }
 		
 		.dotcircle {
@@ -315,6 +445,12 @@
 		}
 		.warningalertcolor {
 			color: #ffba00 !important;
+		}
+		.alertred {
+			color: #f10031;
+		}
+		.topmargin0 {
+			margin-top: 0px;
 		}
 	</style>
 	<link rel="stylesheet" href="https://denisesimoes.github.io/dcard/css/all.css"/>
@@ -345,30 +481,38 @@
 	
 	<div id="main">
 		
-		<div id="header">
-			<h1 class="titleHeader">
-				<a href="https://denisesimoes.github.io/dcard/app.html?utm_source=pwa">
-					<img alt="Mauricio Jun - DCard" id="imageHeader" src="https://4.bp.blogspot.com/-tg4TLTPRzO0/XktzCvrIaxI/AAAAAAAAAGg/IrzX1YGZego5ABpR5gC5S8pz7tp6c1newCK4BGAYYCw/s1600/mauricio-jun-logo-horizontal-projetos-web-vinho-02.png" class="imageResponsive" width="840" height="211" title="Mauricio Jun - DCard"/>
-				</a>
-			</h1>
+		<div id="mainheader">
+			<div id="header">
+				<h1 class="titleHeader">
+					<a href="https://denisesimoes.github.io/dcard/app.html?utm_source=pwa">
+						<img alt="Denise Simões - DCard" id="imageHeader" src="imgs/logo-modelo-01-horizontal-01-TO-crefito-fundo-transparente.png" class="imageResponsive" width="756" height="208" title="Denise Simões - DCard"/>
+					</a>
+				</h1>
+			</div>
 		</div>
 		
 		<div id="content">
 			
-			<h2 class="subtitle">Erro 404</h2>
-			<p class="aligncenter">
-				<span class="dotcircle"><i class="fas fa-exclamation-triangle warningalertcolor"></i></span> Esta página não foi encontrada!
-			</p>
+			<h2 class="subtitle">CARTÃO DIGITAL<span>  .  INTERAJA TOCANDO NOS ÍCONES</span></h2>
 			
-			<p class="aligncenter">
-				<button class="button button2 buttoncenter" onclick="redirectPage('home');">Volte para a página inicial.</button>
-			</p>
-			
-			<div id="mainsocial" class="socialarea">
-				<a href="https://www.facebook.com/mauricio.jun.ti" target="_blank" class="dot"><i class="fab fa-facebook-f"></i></a>
-				<a href="https://www.youtube.com/channel/UCBu0o1Qgq-hNUo7eL4vdLRg" target="_blank" class="dot"><i class="fab fa-youtube"></i></a>
-				<a href="https://www.instagram.com/denise_terapeuta_ocupacional_" target="_blank" class="dot"><i class="fab fa-instagram"></i></a>
-				<a href="https://twitter.com/MauricioTi" target="_blank" class="dot"><i class="fab fa-twitter"></i></a>
+			<div id="contentarea">
+				
+				<h2 class="contentsubtitle">Erro 404</h2>	
+				<p class="aligncenter pdefault">
+					<span class="dotcircle"><i class="fas fa-exclamation-triangle warningalertcolor"></i></span> Esta página não foi encontrada!
+				</p>
+				
+				<p class="aligncenter">
+					<button class="button button3 buttoncenter" onclick="redirectPage('home');">Volte para a página inicial.</button>
+				</p>
+				
+				<div id="mainsocial" class="socialarea">
+					<a href="https://www.facebook.com/Deniterapiaocupacional" target="_blank" class="dot" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/channel/UC_FAPI7WgHuPTBSYQzpSOCQ" target="_blank" class="dot" title="Youtube"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/denise_terapeuta_ocupacional_" target="_blank" class="dot" title="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://twitter.com/DeniseSimoesTO" target="_blank" class="dot" title="Twitter"><i class="fab fa-twitter"></i></a>
+				</div>
+				
 			</div>
 			
 		</div>
