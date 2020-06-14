@@ -26,7 +26,13 @@ var urlsToCache = [
 	'https://1.bp.blogspot.com/-C-dpUy2FyfU/XdmHbX8YwzI/AAAAAAAAAYc/o0fEjzfr-T8pknhymeLaEMxJ5shuLzZ8ACK4BGAYYCw/s1600/denise-simoes-terapeuta-ocupacional-logo-web.png',
 	'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',
-	'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+	'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+	'/dcard/imgs/denise-simoes-bkg.png',
+	'/dcard/imgs/denise-simoes-sobre-mobile.png',
+	'/dcard/imgs/header-bkg-01.png',
+	'/dcard/imgs/logo-bkg-03-mobile-transparente.png',
+	'/dcard/imgs/logo-modelo-01-fundo-transparente-1024x878.png',
+	'/dcard/imgs/logo-modelo-01-horizontal-01-TO-crefito-fundo-transparente.png'
 ];
 self.addEventListener('install', function(event) {
 	event.waitUntil(
