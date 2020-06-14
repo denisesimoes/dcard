@@ -14,7 +14,7 @@
     }
   ],
   "start_url": "https://denisesimoes.github.io/dcard/app.html?utm_source=pwa",
-  "background_color": "#f9f9f9",
+  "background_color": "#ffffff",
   "display": "standalone",
-  "theme_color": "#b5b5b5"
+  "theme_color": "#2c2c2c"
 }
