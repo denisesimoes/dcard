@@ -22,9 +22,8 @@ var urlsToCache = [
 	'/dcard/webfonts/fa-solid-900.ttf',
 	'/dcard/webfonts/fa-solid-900.woff',
 	'/dcard/webfonts/fa-solid-900.woff2',
-	'https://4.bp.blogspot.com/-iGmwG2cWl0Q/XkwIzmN7KEI/AAAAAAAAAH0/vqpB9wKlYQgq_K4LdNXgYr12po6U9UAiQCK4BGAYYCw/s0/mauricio-jun-information-technology-consulting-04-D.png',
-	'https://4.bp.blogspot.com/-tg4TLTPRzO0/XktzCvrIaxI/AAAAAAAAAGg/IrzX1YGZego5ABpR5gC5S8pz7tp6c1newCK4BGAYYCw/s1600/mauricio-jun-logo-horizontal-projetos-web-vinho-02.png',
-	'https://1.bp.blogspot.com/-cQ4pBpW8i-8/Xo4SwsHxkkI/AAAAAAAAAM0/APT76D6Kiu8uGbQ1QXdHuapgQA_5wNqdQCPcBGAYYCw/s1600/mauricio-jun-sobre-01.png',
+	'https://1.bp.blogspot.com/-Nz8RYkhtrus/XjCsU5OAb4I/AAAAAAAAAmE/rIzAmt9EUa40azNI6OEIzv6QUx9KBjLXwCLcBGAsYHQ/s1600/denise-simoes-logo-bkg-07.png',
+	'https://1.bp.blogspot.com/-C-dpUy2FyfU/XdmHbX8YwzI/AAAAAAAAAYc/o0fEjzfr-T8pknhymeLaEMxJ5shuLzZ8ACK4BGAYYCw/s1600/denise-simoes-terapeuta-ocupacional-logo-web.png',
 	'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',
 	'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
