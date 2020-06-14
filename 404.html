@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://denisesimoes.github.io/dcard/favicon/android-chrome-512x512.png" type="image/png" sizes="16x16"/>
+	
+	<!-- Primary Meta Tags -->
+	<title>Denise Simões - Cartão Digital</title>
+	<meta name="title" content="Denise Simões - Cartão Digital"/>
+	<meta name="description" content="Denise Simões, Terapeuta Ocupacional com especialização em Geriatria e Gerontologia Interdisciplinar, atende em Niterói e Rio de Janeiro."/>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://denisesimoes.github.io/dcard/app.html"/>
+	<meta property="og:title" content="Denise Simões - Cartão Digital"/>
+	<meta property="og:description" content="Denise Simões, Terapeuta Ocupacional com especialização em Geriatria e Gerontologia Interdisciplinar, atende em Niterói e Rio de Janeiro."/>
+	<meta property="og:image" content="https://denisesimoes.github.io/dcard/imgs/logo-modelo-01-fundo-transparente-1024x878.png"/>
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://denisesimoes.github.io/dcard/app.html"/>
+	<meta property="twitter:title" content="Denise Simões - Cartão Digital"/>
+	<meta property="twitter:description" content="Denise Simões, Terapeuta Ocupacional com especialização em Geriatria e Gerontologia Interdisciplinar, atende em Niterói e Rio de Janeiro."/>
+	<meta property="twitter:image" content="https://denisesimoes.github.io/dcard/imgs/logo-modelo-01-fundo-transparente-1024x878.png"/>
+	<meta name="keywords" content="Soluções em design, produção, manutenção e gestão em Projetos Web/TI, pequenas empresas, empreendedores, produtos gratuitos Google"/>
+	<meta name="robots" content="index, follow"/>
+	
+	<style>
+		html, body { margin: 0; padding: 0; height: 100%; }
+		body {
+			font-family: Arial;
+			font-size: 16px;
+		}
+		#main {
+			min-height: 100%;
+			position: relative;
+			background-image: url("https://4.bp.blogspot.com/-iGmwG2cWl0Q/XkwIzmN7KEI/AAAAAAAAAH0/vqpB9wKlYQgq_K4LdNXgYr12po6U9UAiQCK4BGAYYCw/s0/mauricio-jun-information-technology-consulting-04-D.png");
+			background-color: #f9f9f9;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		#header {
+			padding: 8px  8px  0px  8px;
+		}
+		#content {
+			padding-top: 8px;
+			padding-right: 8px;
+			padding-bottom: 8px;
+			padding-left: 8px;
+		}
+		#footer {
+			min-height: 50px;
+			background: #123b40;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: #fff;
+		}
+		#footer a {
+			color: #84bfb4;
+			text-decoration: none;
+		}
+		
+		/* Style the tab */
+		.tab {
+			overflow: hidden;
+			border: 1px solid #3a8c8c;
+			background-color: #3a8c8c;
+		}
+		
+		/* Style the buttons inside the tab */
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 12px 14px;
+			transition: 0.3s;
+			font-size: 0.8em;
+			color: #fff;
+			width: 33.3%;
+		}
+		
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+			background-color: #84bfb4;
+		}
+		
+		/* Create an active/current tablink class */
+		.tab button.active {
+			background-color: #123b40;
+		}
+		
+		/* Style the tab content */
+		.tabcontent {
+			display: none;
+			padding: 10px 12px;
+			border: 1px solid #3a8c8c;
+			border-top: none;
+		}
+		
+		.imageResponsive {
+			max-width: 100%;
+			height: auto;
+		}
+		.titleHeader, .titleHeader a {
+			display: block;
+			text-align: center;
+			border: none;
+		}
+		h1.titleHeader {
+			font-size: 2em;
+			margin-block-start: 0px;
+			margin-block-end: 0px;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+			line-height: 0.7em; /*to avoid padding-bottom*/
+		}
+		.subtitle {
+			display: block;
+			font-size: 1em;
+			margin-block-start: 0.53em;
+			margin-block-end: 0.83em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+			padding-left: 0.33em;
+			border-bottom: 1px solid #b5b5b5;
+			border-left: 3px solid #575a5a;
+		}
+		
+		/*  SECTIONS  */
+		.section {
+			clear: both;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		/*  COLUMN SETUP  */
+		.col {
+			display: block;
+			float:left;
+			margin: 1% 0 1% 1.6%;
+			text-align: center;
+		}
+		.col:first-child { margin-left: 0; }
+
+		/*  GROUPING  */
+		.group:before,
+		.group:after { content:""; display:table; }
+		.group:after { clear:both;}
+		.group { zoom:1; /* For IE 6/7 */ }
+		
+		/*  GRID OF THREE  */
+		.span_3_of_3 { width: 100%; }
+		.span_2_of_3 { width: 66.13%; }
+		.span_1_of_3 { width: 32.26%; }
+
+		/*  GO FULL WIDTH BELOW 480 PIXELS */
+		@media only screen and (max-width: 480px) {
+			.col {  margin: 1% 0 1% 1.6%; }
+			/*.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }*/
+			.span_3_of_3 { width: 100%; }
+			.span_2_of_3 { width: 66.13%; }
+			.span_1_of_3 { width: 32.26%; }
+		}
+		
+		.dot {
+			display: inline-block;
+			border-radius: 50%;
+			height: 30px;
+			width: 30px;
+			text-align: center;
+			line-height: 30px;
+			vertical-align: middle;
+			padding: 6px;
+			background-color: #3a8c8c;
+		}
+		.dot i {
+			font-size: 26px;
+			line-height: 30px;
+			color: #fff;
+			border: none;
+			text-decoration: none;
+		}
+		.fahighlight {
+			color: #fff !important;
+		}
+		.dothighlight {
+			background-color: #3a8c8c;
+		}
+		.iconslinkstexts {
+			display: block;
+			color: #123b40;
+			border: none;
+			margin-top: 5px;
+			margin-bottom: 15px;
+			text-decoration: none;
+			font-size: 0.8em;
+		}
+		.iconslinkstextsfloat {
+			display: inline-block;
+			color: #123b40;
+			border: none;
+			margin-left: 5px;
+			text-decoration: none;
+			font-size: 0.8em;
+			min-height: 42px;
+			line-height: 1.6;
+			vertical-align: middle;
+			text-align: left;
+		}
+		.iconslinkstextshighlight {
+			color: #123b40;
+		}
+		.iconslinkstexts strong, .iconslinkstextsfloat strong {
+			font-weight: normal;
+		}
+		.clearall {
+			clear: both;
+		}
+		.aligncenter {
+			text-align: center;
+		}
+		.f80size {
+			font-size: 0.8em;
+		}
+		.topmargin0 {
+			margin-top: 0px;
+		}
+		
+		.socialarea {
+			display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			text-align: center;
+			background: rgba(209,209,188,0.3);
+		}
+		.socialarea .dot {
+			margin: 10px 5px;
+			background-color: #BF2A45;
+		}
+		footer {
+			text-align: center;
+			padding: 3px;
+			font-size: 0.8em;
+		}
+		.avatar {
+			float: left;
+		}
+		.avatar-85 {
+			border: 3px solid #ba9b65 !important;
+			border-radius: 85px;
+			margin-right: 10px;
+			margin-bottom: 5px;
+		}
+		.photo {
+			max-width: 100%;
+			vertical-align: middle;
+			border: 0;
+		}
+		.verticalaligntop {
+			vertical-align: top;
+		}
+		.lineheight1-6 {
+			line-height: 1.6;
+		}
+		
+		.button {
+			border: none;
+			color: white;
+			padding: 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.button2 {
+			background-color: #3a8c8c;
+			border-radius: 4px; 
+		}
+		.button2:hover {
+			background-color: #123b40;
+			color: white;
+		}
+		.buttoncenter { margin: 0px auto; }
+		
+		.dotcircle {
+			display: inline-block;
+			border-radius: 50%;
+			height: 22px;
+			width: 22px;
+			text-align: center;
+			line-height: 22px;
+			vertical-align: middle;
+			padding: 3px;
+			/*background-color: #3a8c8c;*/
+			background-color: #000;
+			border: 3px solid #ffba00;
+		}
+		.dotcircle i {
+			font-size: 16px;
+			line-height: 20px;
+			color: #fff;
+			border: none;
+			text-decoration: none;
+		}
+		.warningalertcolor {
+			color: #ffba00 !important;
+		}
+	</style>
+	<link rel="stylesheet" href="https://denisesimoes.github.io/dcard/css/all.css"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169289167-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-169289167-1');
+	</script>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NQH9ZVT');</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQH9ZVT"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<div id="main">
+		
+		<div id="header">
+			<h1 class="titleHeader">
+				<a href="https://denisesimoes.github.io/dcard/app.html?utm_source=pwa">
+					<img alt="Mauricio Jun - DCard" id="imageHeader" src="https://4.bp.blogspot.com/-tg4TLTPRzO0/XktzCvrIaxI/AAAAAAAAAGg/IrzX1YGZego5ABpR5gC5S8pz7tp6c1newCK4BGAYYCw/s1600/mauricio-jun-logo-horizontal-projetos-web-vinho-02.png" class="imageResponsive" width="840" height="211" title="Mauricio Jun - DCard"/>
+				</a>
+			</h1>
+		</div>
+		
+		<div id="content">
+			
+			<h2 class="subtitle">Erro 404</h2>
+			<p class="aligncenter">
+				<span class="dotcircle"><i class="fas fa-exclamation-triangle warningalertcolor"></i></span> Esta página não foi encontrada!
+			</p>
+			
+			<p class="aligncenter">
+				<button class="button button2 buttoncenter" onclick="redirectPage('home');">Volte para a página inicial.</button>
+			</p>
+			
+			<div id="mainsocial" class="socialarea">
+				<a href="https://www.facebook.com/mauricio.jun.ti" target="_blank" class="dot"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.youtube.com/channel/UCBu0o1Qgq-hNUo7eL4vdLRg" target="_blank" class="dot"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.instagram.com/denise_terapeuta_ocupacional_" target="_blank" class="dot"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/MauricioTi" target="_blank" class="dot"><i class="fab fa-twitter"></i></a>
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+			<footer>
+				<p>
+					Copyleft <i class="fab fa-creative-commons-sa"></i> 
+					<span id="showyear"></span> 
+					<script>
+						var d = new Date();
+						var n = d.getFullYear();
+						document.getElementById("showyear").innerHTML = n;
+					</script>
+					<a href="mailto:mauriciojun.ti@gmail.com"><strong>Mauricio Jun</strong></a>. Cópia autorizada!
+				</p>
+			</footer>
+		</div>
+		
+	</div>
+	
+	<script>
+		function redirectPage(gopage) {
+			if (gopage === 'home') {
+				location.replace("https://denisesimoes.github.io/dcard/app.html")
+			}
+		}
+		
+		var elmnttochange = document.getElementById("content");
+		var elmnt = document.getElementById("footer");
+		var elmntheight = 0;
+		elmntheight = elmnt.offsetHeight+"px";
+		elmnttochange.style.paddingBottom = elmntheight;
+	</script>
+   
+</body>
+</html>

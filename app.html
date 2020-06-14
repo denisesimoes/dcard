@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<!-- Primary Meta Tags -->
+	<title>Denise Simões - Cartão Digital</title>
+	<meta name="title" content="Denise Simões - Cartão Digital"/>
+	<meta name="description" content="Denise Simões, Terapeuta Ocupacional com especialização em Geriatria e Gerontologia Interdisciplinar, atende em Niterói e Rio de Janeiro."/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://denisesimoes.github.io/dcard/app.html"/>
+	<meta property="og:title" content="Denise Simões - Cartão Digital"/>
+	<meta property="og:description" content="Denise Simões, Terapeuta Ocupacional com especialização em Geriatria e Gerontologia Interdisciplinar, atende em Niterói e Rio de Janeiro."/>
+	<meta property="og:image" content="https://denisesimoes.github.io/dcard/imgs/logo-modelo-01-fundo-transparente-1024x878.png"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://denisesimoes.github.io/dcard/app.html"/>
+	<meta property="twitter:title" content="Denise Simões - Cartão Digital"/>
+	<meta property="twitter:description" content="Denise Simões, Terapeuta Ocupacional com especialização em Geriatria e Gerontologia Interdisciplinar, atende em Niterói e Rio de Janeiro."/>
+	<meta property="twitter:image" content="https://denisesimoes.github.io/dcard/imgs/logo-modelo-01-fundo-transparente-1024x878.png"/>
+	
+	<meta name="keywords" content="Soluções em design, produção, manutenção e gestão em Projetos Web/TI, pequenas empresas, empreendedores, produtos gratuitos Google"/>
+	<meta name="robots" content="index, follow"/>
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<link rel="icon" href="https://denisesimoes.github.io/dcard/favicon/android-chrome-512x512.png" type="image/png" sizes="16x16"/>
+	<link rel="manifest" href="https://denisesimoes.github.io/dcard/manifest-github.json"/>
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ruda:400,700,900|Open+Sans:400,600,700,400italic|Black+Ops+One" media="all"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script>
+		if (navigator.onLine === false) {
+			location.replace("/dcard/offline.html");
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169289167-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-169289167-1');
+	</script>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NQH9ZVT');</script>
+	<!-- End Google Tag Manager -->
+	
+	<style>
+		* {
+			margin:0;
+			padding:0
+		}
+		html, body {
+			width: 100%;
+			height:100%;
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		.h_iframe {
+			position:relative;
+		}
+		.h_iframe .ratio {
+			display:block;
+			width:100%;
+			height:auto;
+		}
+		.h_iframe iframe {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+		#iframe_id {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			/*z-index: 1;*/ /* Sit on top */
+			z-index: 19999;
+			left: 0;
+			top: initial !important;
+			bottom: 0 !important;
+			width: 100%; /* Full width */
+			/*height: 100%;*/ /* Full height */
+			height: auto !important;
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			-webkit-animation-name: fadeIn; /* Fade in the background */
+			-webkit-animation-duration: 0.4s;
+			animation-name: fadeIn;
+			animation-duration: 0.4s;
+		}
+
+		/* Modal Content */
+		.modal-content {
+			position: fixed;
+			bottom: 0;
+			background-color: #fefefe;
+			width: 100%;
+			-webkit-animation-name: slideIn;
+			-webkit-animation-duration: 0.4s;
+			animation-name: slideIn;
+			animation-duration: 0.4s
+		}
+
+		/* The Close Button */
+		.close {
+			color: #123b40;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.modal-header {
+			padding: 2px 16px;
+			/*background-color: #5cb85c;*/
+			background-color: #fff;
+			color: white;
+		}
+		.modal-header h2 {
+			font-size: 15px;
+			line-height: 28px;
+			color: #000;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		/*.modal-body {padding: 2px 16px;}*/
+		.modal-body {padding: 11px 16px 6px 16px;}
+
+		.modal-footer {
+			display: none;
+			/*
+			padding: 2px 16px;
+			background-color: #5cb85c;
+			color: white;
+			*/
+		}
+
+		/* Add Animation */
+		@-webkit-keyframes slideIn {
+			from {bottom: -300px; opacity: 0} 
+			to {bottom: 0; opacity: 1}
+		}
+
+		@keyframes slideIn {
+			from {bottom: -300px; opacity: 0}
+			to {bottom: 0; opacity: 1}
+		}
+
+		@-webkit-keyframes fadeIn {
+			from {opacity: 0} 
+			to {opacity: 1}
+		}
+
+		@keyframes fadeIn {
+			from {opacity: 0} 
+			to {opacity: 1}
+		}
+	</style>
+	
+	<style type="text/css">
+		.add-to {
+			/*
+			background-color: #E02D44; 
+			width: 30%;
+			*/
+		} 
+		.add-to-btn {
+			/*
+			background-color: #E02D44; 
+			color: white; 
+			border: none; 
+			outline:none; 
+			font-weight: bold; 
+			width: 100%; 
+			height: 50px;
+			*/
+		}
+		.fullscreenline { display: block; align: center; margin: 0px auto; text-align: center; }
+		.fullscreenline button {
+			transition: all .3s;
+			background: #3a8c8c;
+			padding: 10px 10px !important;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0 5px 0;
+			/*font-size: 15px;*/
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			font-weight: bold;
+			white-space: nowrap;
+			font-family: Ruda;
+			/*font-family: 'Lato', sans-serif;*/
+			text-decoration: none;
+			/*line-height: 32px;*/
+			letter-spacing: 1.5px;
+			cursor: pointer;
+			border: none !important;
+		}
+		button.firstbutt { margin-right: 10px !important; }
+	</style>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQH9ZVT"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<iframe id="iframe_id" name="iframe_name" src="https://denisesimoes-card.blogspot.com/" frameborder="0" allowfullscreen iframe-height="0" noresize="noresize"></iframe>
+	
+	<!-- The Modal -->
+	<div id="myModal" class="modal add-to">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Para facilitar, você pode...</h2>
+				<span class="close">&times;</span>
+			</div>
+			<div class="modal-body">
+				<label class="fullscreenline">
+					<button class="add-to-btn">Adicionar à tela inicial</button>
+				</label>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		window.onload = function(){
+			// Keep checking for message
+			var checkIframeMessageExist = setInterval(function() {
+				var isLoaded = $("#iframe_id").attr("iframe-height");
+				if (isLoaded == '0') {
+					console.log('iframe failed to load');
+					clearInterval(checkIframeMessageExist);
+				} else {
+					if (isLoaded <= getHeight()) {
+						isLoaded = getHeight();
+					}
+					console.log('iframe loaded = ' + isLoaded);
+					clearInterval(checkIframeMessageExist);
+				}
+			}, 100); // check every 100ms
+		}
+		
+		function getHeight(){
+			var body = document.body,
+				html = document.documentElement;
+
+			var height = Math.max( body.scrollHeight, body.offsetHeight, 
+								   html.clientHeight, html.scrollHeight, html.offsetHeight );
+			console.log('this page height = ' + height);
+			return height;
+		}
+		
+		if (window.addEventListener) {
+			// For standards-compliant web browsers
+			window.addEventListener("message", displayMessage, false);
+		} else if (window.attachEvent) {
+			window.attachEvent("onmessage", displayMessage);
+		} else {
+			window.onmessage = displayMessage();
+		}
+		
+		function displayMessage (evt) {
+			console.log('iframe height sent by iframe!!!');
+			var message;
+			if (evt.origin !== "https://denisesimoes-card.blogspot.com") {
+				message = "Negado";
+				console.log('Negado - ' + evt.origin);
+			} else {
+				console.log('Acesso permitido!');
+				message = "I got " + new Date(evt.timeStamp) + " \t " + evt.data.name + " :: " + evt.data.iframeheight.toString().fontcolor('green') + " :: " + evt.data.number.toString().fontcolor('blue') + evt.data + " from " + evt.origin + "<br>";
+				if(evt.data.iframeheight.toString() !== '0'){
+					$("#iframe_id").attr('iframe-height', evt.data.iframeheight);
+					console.log('iframe height changed: ' + evt.data.iframeheight);
+					//modal.style.display = "block";
+				}
+				
+				var childIframe = document.getElementById("iframe_id");
+				console.log('window fullscreen!!! - ' + isPwa());
+				if (isPwa()) {
+					var topmsg={ topname: 'denisesimoes.github.io', topfullscreen: 1 };
+					childIframe.contentWindow.postMessage(topmsg, '*');
+					sendToAnalytics02('App','open','DCard Page');
+					console.log('top iframe fullscreen sent!!! ' + topmsg.topfullscreen);
+				} else {
+					var topmsg={ topname: 'denisesimoes.github.io', topfullscreen: 0 };
+					childIframe.contentWindow.postMessage(topmsg, '*');
+					sendToAnalytics02('Web','open','DCard Page');
+					console.log('top iframe fullscreen sent!!! ' + topmsg.topfullscreen);
+				}
+			}
+			//return message;
+		}
+		function isPwa() { 
+			var displayModes = ["fullscreen", "standalone", "minimal-ui"];
+			return displayModes.some(
+				(displayMode) => window.matchMedia('(display-mode: ' + displayMode + ')').matches
+			);
+		}
+		function sendToAnalytics02(userChoice,eventName,eventCategory) {
+			gtag('event', eventName, {
+				'send_to': 'UA-169289167-1',
+				'event_category': eventCategory,
+				'event_label': userChoice
+			});
+			console.log('Send to anakytics 02 = ' + userChoice);
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		//btn.onclick = function() {
+		//	modal.style.display = "block";
+		//}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		
+		//window.onload = function(){
+			//modal.style.display = "block";
+		//}
+	</script>
+	
+	<script type="text/javascript">
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('https://denisesimoes.github.io/dcard/sw.js').then(function(registration) {
+					// Registration was successful
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err) {
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+
+		let deferredPrompt;
+		var label = document.querySelector('.add-to');
+		var button = document.querySelector('.add-to-btn');
+		var modaladd = document.querySelector('.modal');
+		label.style.display = 'none';
+		//modaladd.style.display = 'none';
+
+		window.addEventListener('beforeinstallprompt', (e) => {
+			// Prevent Chrome 67 and earlier from automatically showing the prompt
+			e.preventDefault();
+			// Stash the event so it can be triggered later.
+			deferredPrompt = e;
+			label.style.display = 'block';
+			//modaladd.style.display = 'block';
+
+			button.addEventListener('click', (e) => {
+				// hide our user interface that shows our A2HS button
+				label.style.display = 'none';
+				//modaladd.style.display = 'none';
+				// Show the prompt
+				deferredPrompt.prompt();
+				sendToAnalytics('choice prompt','open','A2HS Prompt');
+				// Wait for the user to respond to the prompt
+				deferredPrompt.userChoice.then((choiceResult) => {
+					if (choiceResult.outcome === 'accepted') {
+						sendToAnalytics(choiceResult.outcome,'click','A2HS Prompt');
+						console.log('User accepted the A2HS prompt = ' + choiceResult.outcome);
+					} else {
+						sendToAnalytics(choiceResult.outcome,'click','A2HS Prompt');
+						console.log('User dismissed the A2HS prompt = ' + choiceResult.outcome);
+					}
+					deferredPrompt = null;
+				});
+			});
+			function sendToAnalytics(userChoice,eventName,eventCategory) {
+				gtag('event', eventName, {
+					'send_to': 'UA-169289167-1',
+					'event_category': eventCategory,
+					'event_label': userChoice
+				});
+				console.log('Send to anakytics = ' + userChoice);
+			}
+		});
+	</script>
+	<script>
+		function getAddthisClicks() {
+			$( 'ul.at-expanding-share-button-services-list li' ).on( 'click', 'a', function() {
+				if ($( this ).find('title').text()) {
+					var sendicontitle = $( this ).find('title').text();
+					sendToAnalytics03(sendicontitle,'share','DCard Page - Addthis');
+					console.log('Share Addthis clicado = ' + sendicontitle);
+				}
+			});
+		}
+		var checkAddthisExist = setInterval(function() {
+			if ($( 'ul.at-expanding-share-button-services-list li' ).length) {
+				getAddthisClicks();
+				clearInterval(checkAddthisExist);
+			}
+		}, 100); // check every 100ms
+		function sendToAnalytics03(userChoice,eventName,eventCategory) {
+			gtag('event', eventName, {
+				'send_to': 'UA-169289167-1',
+				'event_category': eventCategory,
+				'event_label': userChoice
+			});
+			console.log('Send to anakytics = ' + userChoice);
+		}
+	</script>
+	
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<!-- script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e63e25e1d3118b8"></script -->
+	
+</body>
+</html>

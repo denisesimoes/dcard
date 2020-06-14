@@ -1,0 +1,20 @@
+{
+  "short_name": "Denise Simões - App",
+  "name": "Denise Simões - Cartão Digital",
+  "icons": [
+    {
+      "src": "https://denisesimoes.github.io/dcard/favicon/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://denisesimoes.github.io/dcard/favicon/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://denisesimoes.github.io/dcard/app.html?utm_source=pwa",
+  "background_color": "#f9f9f9",
+  "display": "standalone",
+  "theme_color": "#b5b5b5"
+}
